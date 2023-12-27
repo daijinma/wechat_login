@@ -40,11 +40,6 @@ class Login:
         # 等待扫二维码
         time.sleep(5)
         Browner.save_screenshot('screenshot.png')
-        ck = Browner.get_cookies()
-
-        with open('../ck.txt', 'w') as f:
-            f.write(ck1)
-            f.close()
 
     # 获取token，在页面中提取
     def get_token(self):
